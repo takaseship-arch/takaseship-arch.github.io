@@ -156,3 +156,37 @@ hr{ border:0; border-top:1px solid var(--border); margin:12px 0; }
   background:var(--primary2);
   text-decoration:none;
 }
+.hero{
+  position: relative;
+}
+
+.hero-overlay{
+  position:absolute;
+  left:18px;
+  right:18px;
+  bottom:18px;
+  padding:14px;
+  color:#fff;
+  border-radius:10px;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.55) 45%, rgba(0,0,0,.70) 100%);
+}
+
+.hero-title{
+  margin:0 0 6px;
+  font-size:32px;
+  line-height:1.05;
+}
+
+.hero-btn{
+  display:inline-block;
+  padding:10px 12px;
+  border-radius:10px;
+  background:#fff;
+  color:#0b5cab;
+  font-weight:800;
+}
+
+.hero-btn.ghost{
+  background:rgba(255,255,255,.2);
+  color:#fff;
+}
