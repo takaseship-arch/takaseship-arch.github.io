@@ -9,25 +9,7 @@
 </head>
 <body>
 
-
-<main class="container">
-
-  <!-- ★ 写真＋文字重ね ★ -->
-  <div class="hero">
-    <img src="PXL_20260208_033046935.jpg" alt="山奥市の風景">
-
-    <div class="hero-overlay">
-      <p class="hero-kicker">森と清流のまち</p>
-      <h1 class="hero-title">山奥市</h1>
-      <p class="hero-sub">Yamaoku City ｜</p>
-
-      <div class="hero-cta">
-        <a class="hero-btn" href="life.html#moving">引越し手続き</a>
-        <a class="hero-btn ghost" href="disaster.html">防災情報</a>
-      </div>
-    </div>
-  </div>
-
+<header class="topbar">
   <div class="container">
     <div class="brand">
       <strong>山奥市（やまおくし）公式ホームページ</strong>
@@ -41,6 +23,15 @@
   </div>
 </header>
 
+<nav class="nav">
+  <div class="container">
+    <a href="life.html">くらし・手続き</a>
+    <a href="tourism.html">観光・文化</a>
+    <a href="disaster.html">防災</a>
+    <a href="admin.html">市政情報</a>
+    <a href="news.html">新着情報</a>
+  </div>
+</nav>
 
 <section class="alert">
   <div class="container">
@@ -54,9 +45,20 @@
 
 <main class="container">
 
-  <!-- ★ここが市の写真（hero）です：htmlの外に出さないこと★ -->
+  <!-- ★写真はここに1回だけ（文字重ね）★ -->
   <div class="hero">
     <img src="PXL_20260208_033046935.jpg" alt="山奥市の風景">
+
+    <div class="hero-overlay">
+      <p class="hero-kicker">森と清流のまち</p>
+      <h1 class="hero-title">山奥市</h1>
+      <p class="hero-sub">Yamaoku City ｜ 人口約2万8千人（結界内の人類系種族）</p>
+
+      <div class="hero-cta">
+        <a class="hero-btn" href="life.html#moving">引越し手続き</a>
+        <a class="hero-btn ghost" href="disaster.html">防災情報</a>
+      </div>
+    </div>
   </div>
 
   <div class="kv" style="margin-top:16px;">
@@ -64,16 +66,15 @@
     <p>人口約2万8千人（結界内の人類系種族）。神聖森林と浄化清流に囲まれた完全守護都市「山奥市」。</p>
   </div>
 
-  <!-- 目的別（自治体トップあるあるの“入口”を増やす） -->
   <div class="card" style="margin-top:16px;">
     <h2>目的別メニュー</h2>
-    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px;">
-      <a class="news-item" href="life.html#moving">引越し・転入転出</a>
-      <a class="news-item" href="life.html#certificate">住民票・戸籍・証明</a>
-      <a class="news-item" href="life.html#tax">税・保険・年金</a>
-      <a class="news-item" href="life.html#garbage">ごみ・リサイクル</a>
-      <a class="news-item" href="life.html#childcare">子育て・教育</a>
-      <a class="news-item" href="disaster.html#shelter">避難所・防災</a>
+    <div class="menu-grid">
+      <a href="life.html#moving">引越し・転入転出</a>
+      <a href="life.html#certificate">住民票・戸籍・証明</a>
+      <a href="life.html#tax">税・保険・年金</a>
+      <a href="life.html#garbage">ごみ・リサイクル</a>
+      <a href="life.html#childcare">子育て・教育</a>
+      <a href="disaster.html#shelter">避難所・防災</a>
     </div>
     <p style="margin:10px 0 0; color:var(--muted); font-size:12px;">
       ※「歌志内市のような入口の多いトップ」を意識した構成です。
