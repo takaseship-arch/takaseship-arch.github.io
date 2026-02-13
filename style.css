@@ -1,3 +1,5 @@
+
+
 :root{
   --bg:#f7f8fa;
   --card:#ffffff;
@@ -24,12 +26,45 @@ a:hover{ text-decoration:underline; }
 
 .container{ max-width:1100px; margin:0 auto; padding:16px; }
 
+/* ===== Header ===== */
 .topbar{ background:var(--primary); color:#fff; }
-.topbar .container{ display:flex; gap:16px; align-items:center; justify-content:space-between; }
-.brand{ display:flex; flex-direction:column; line-height:1.15; }
-.brand strong{ font-size:20px; letter-spacing:.02em; }
+.topbar .container{
+  display:flex;
+  gap:16px;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* brand（左：市章＋サイト名） */
+.brand{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  line-height:1.15;
+}
+
+/* brand内のテキストブロック */
+.brand .brand-text{
+  display:flex;
+  flex-direction:column;
+}
+.brand strong{ font-size:18px; letter-spacing:.02em; }
 .brand span{ font-size:12px; opacity:.9; }
 
+/* 市章（小さめ・公式っぽく） */
+.city-emblem{
+  width:18px;
+  height:18px;
+  color:#ffffff;
+  flex:0 0 auto;
+}
+.city-emblem svg{
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+/* Search */
 .search{ display:flex; gap:8px; align-items:center; }
 .search input{
   width:260px;
@@ -47,6 +82,7 @@ a:hover{ text-decoration:underline; }
   cursor:pointer;
 }
 
+/* ===== Nav ===== */
 .nav{ background:var(--primary2); }
 .nav a{
   display:inline-block;
@@ -57,8 +93,15 @@ a:hover{ text-decoration:underline; }
 }
 .nav a:hover{ background:rgba(255,255,255,.08); text-decoration:none; }
 
+/* ===== Alert ===== */
 .alert{ background:var(--danger-bg); border-bottom:1px solid #ffd0d8; }
-.alert .container{ display:flex; gap:10px; align-items:flex-start; padding-top:12px; padding-bottom:12px; }
+.alert .container{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  padding-top:12px;
+  padding-bottom:12px;
+}
 .badge{
   background:var(--danger);
   color:#fff;
@@ -70,16 +113,18 @@ a:hover{ text-decoration:underline; }
 .alert strong{ color:var(--danger); }
 .alert p{ margin:0; color:#5b2a33; }
 
+/* ===== Layout ===== */
 .grid{ display:grid; grid-template-columns: 280px 1fr; gap:16px; }
 @media (max-width: 900px){
   .grid{ grid-template-columns:1fr; }
   .search input{ width: 100%; max-width: 60vw; }
 }
 
+/* ===== Cards ===== */
 .card{
   background:var(--card);
   border:1px solid var(--border);
-  border-radius:10px; /* 自治体サイトっぽく角丸控えめ */
+  border-radius:10px;
   box-shadow:var(--shadow);
   padding:14px;
 }
@@ -98,6 +143,7 @@ a:hover{ text-decoration:underline; }
 .list{ margin:0; padding-left:18px; color:var(--text); }
 .list li{ margin:8px 0; }
 
+/* ===== News ===== */
 .news{ display:flex; flex-direction:column; gap:10px; }
 .news-item{
   padding:10px 12px;
@@ -108,6 +154,7 @@ a:hover{ text-decoration:underline; }
 .news-item small{ color:var(--muted); display:block; margin-bottom:4px; }
 .news-item a{ font-weight:800; }
 
+/* ===== Quicklinks ===== */
 .quicklinks a{
   display:block;
   padding:10px 10px;
@@ -118,11 +165,13 @@ a:hover{ text-decoration:underline; }
 }
 .quicklinks a:hover{ background:#f2f7ff; text-decoration:none; }
 
+/* ===== Footer ===== */
 .footer{ margin-top:20px; padding:18px 0; color:var(--muted); font-size:12px; }
 .footer .container{ border-top:1px solid var(--border); padding-top:14px; }
 hr{ border:0; border-top:1px solid var(--border); margin:12px 0; }
 
-/* ===== トップ写真（ヒーロー） ===== */
+/* ===== Hero image ===== */
+.hero{ position:relative; }
 .hero img{
   width:100%;
   height:420px;
@@ -133,7 +182,52 @@ hr{ border:0; border-top:1px solid var(--border); margin:12px 0; }
   box-shadow:var(--shadow);
 }
 
-/* ===== 目的別タイル（indexの「目的別メニュー」用） ===== */
+/* Hero overlay（写真に文字を重ねる） */
+.hero-overlay{
+  position:absolute;
+  left:18px;
+  right:18px;
+  bottom:18px;
+  padding:14px;
+  color:#fff;
+  border-radius:10px;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.55) 45%, rgba(0,0,0,.70) 100%);
+}
+.hero-kicker{
+  margin:0 0 4px;
+  font-weight:700;
+  letter-spacing:.08em;
+  font-size:12px;
+  opacity:.95;
+}
+.hero-title{
+  margin:0 0 6px;
+  font-size:32px;
+  line-height:1.05;
+  letter-spacing:.02em;
+}
+.hero-sub{
+  margin:0 0 10px;
+  font-size:12px;
+  opacity:.92;
+}
+.hero-cta{ display:flex; gap:10px; flex-wrap:wrap; }
+
+.hero-btn{
+  display:inline-block;
+  padding:10px 12px;
+  border-radius:10px;
+  background:#fff;
+  color:#0b5cab;
+  font-weight:800;
+}
+.hero-btn:hover{ text-decoration:none; background:#ffffff; }
+.hero-btn.ghost{
+  background:rgba(255,255,255,.2);
+  color:#fff;
+}
+
+/* ===== Menu tiles ===== */
 .menu-grid{
   display:grid;
   grid-template-columns: repeat(3, 1fr);
@@ -156,70 +250,3 @@ hr{ border:0; border-top:1px solid var(--border); margin:12px 0; }
   background:var(--primary2);
   text-decoration:none;
 }
-.hero{
-  position: relative;
-}
-
-.hero-overlay{
-  position:absolute;
-  left:18px;
-  right:18px;
-  bottom:18px;
-  padding:14px;
-  color:#fff;
-  border-radius:10px;
-  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.55) 45%, rgba(0,0,0,.70) 100%);
-}
-
-.hero-title{
-  margin:0 0 6px;
-  font-size:32px;
-  line-height:1.05;
-}
-
-.hero-btn{
-  display:inline-block;
-  padding:10px 12px;
-  border-radius:10px;
-  background:#fff;
-  color:#0b5cab;
-  font-weight:800;
-}
-
-.hero-btn.ghost{
-  background:rgba(255,255,255,.2);
-  color:#fff;
-}
-/* 市章（ヘッダー左のロゴ） */
-.topbar .container{
-  align-items:center;
-}
-.brand{
-  flex-direction:row;
-  align-items:center;
-  gap:12px;
-}
-.brand > div{
-
-  display:flex;
-  align-items:center;
-  gap:8px;
-}
-
-}
-.city-emblem{
-  width:22px;
-  height:22px;
-  color:#ffffff;
-  flex: 0 0 auto;
-}
-
-}
-
-}
-.city-emblem svg{
-  width:100%;
-  height:100%;
-  display:block;
-}
-
