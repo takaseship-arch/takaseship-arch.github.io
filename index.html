@@ -13,28 +13,68 @@
   <div class="container">
     <div class="brand-text">
     
-  <svg viewBox="0 0 100 100" role="img" aria-label="山奥市章">
-    <!-- 外円（結界） -->
-    <circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="6"/>
-    <!-- 内円（控えめな縁） -->
-    <circle cx="50" cy="50" r="38" fill="none" stroke="currentColor" stroke-width="2" opacity=".6"/>
+  <svg viewBox="0 0 100 100" aria-label="山奥市章">
+  <!-- 結界外円（少し太く） -->
+  <circle cx="50" cy="50" r="46"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="7"/>
 
-    <!-- 山（シルエット） -->
-    <path d="M18 62 L38 38 L50 50 L62 34 L82 62 Z" fill="currentColor" opacity=".95"/>
+  <!-- 結界内円 -->
+  <circle cx="50" cy="50" r="38"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          opacity="0.75"/>
 
-    <!-- 清流（Sカーブ） -->
-    <path d="M32 72
-             C40 64, 44 62, 52 58
-             C60 54, 62 48, 56 42
-             C50 36, 44 32, 46 26"
-          fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity=".95"/>
-    <path d="M30 74
-             C39 66, 44 64, 53 60
-             C62 56, 65 48, 58 41
-             C51 34, 45 30, 46 24"
-          fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity=".75"/>
-  </svg>
-</div>
+  <!-- 三重の山（強調） -->
+  <path d="M18 66 L34 46 L50 66 Z"
+        fill="currentColor"/>
+  <path d="M34 66 L50 36 L66 66 Z"
+        fill="currentColor"/>
+  <path d="M50 66 L66 46 L82 66 Z"
+        fill="currentColor"/>
+
+  <!-- 五芒星（やや太く） -->
+  <path d="M50 26
+           L59 46
+           L82 46
+           L63 60
+           L70 82
+           L50 68
+           L30 82
+           L37 60
+           L18 46
+           L41 46 Z"
+        fill="none"
+        stroke="#ffffff"
+        stroke-width="4"
+        stroke-linejoin="round"/>
+
+  <!-- 梵字風抽象シンボル -->
+  <path d="M50 48
+           c-7 0-12 4-12 8
+           c0 5 5 8 12 8
+           c7 0 12-3 12-8
+           c0-4-5-8-12-8z"
+        fill="none"
+        stroke="#ffffff"
+        stroke-width="2.5"/>
+
+  <path d="M43 48
+           c4-9 14-9 18 0"
+        fill="none"
+        stroke="#ffffff"
+        stroke-width="2.5"
+        stroke-linecap="round"/>
+
+  <path d="M50 42 v26"
+        fill="none"
+        stroke="#ffffff"
+        stroke-width="2.5"
+        stroke-linecap="round"/>
+</svg>
+
 
 
   <div>
