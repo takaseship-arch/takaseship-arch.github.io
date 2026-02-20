@@ -1,112 +1,73 @@
-<article class="card" style="margin-top:20px;">
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>防災・緊急情報｜山奥市</title>
+  <meta name="description" content="山奥市の防災・緊急情報ページです。緊急訓練、避難所情報、災害への備えをご確認ください。" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-  <!-- 緊急訓練情報（最上部） -->
-  <section>
-    <h1>緊急防災訓練のお知らせ</h1>
-    <p><strong>掲載日：</strong>2026年3月1日</p>
-    <p>
-      山奥市では、局所的破壊に伴う防災行政無線の試験放送を実施します。これは実際の災害ではなく、
-      市内全域で情報伝達体制の確認を目的とした訓練です。
-    </p>
-    <ul class="list">
-      <li><strong>実施日：</strong>2026年3月15日（日）</li>
-      <li><strong>時間：</strong>12時00分頃より</li>
-      <li><strong>内容：</strong>防災行政無線試験放送（市全域）</li>
-    </ul>
-    <p><a href="#detailTraining">詳細はこちら</a></p>
-  </section>
+<header class="topbar">
+  <div class="container">
+    <div class="brand">
+      <div class="city-emblem" aria-hidden="true">
+        <!-- 市章（A案） -->
+        <svg viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-width="7"/>
+          <circle cx="50" cy="50" r="38" fill="none" stroke="currentColor" stroke-width="2.5" opacity="0.75"/>
+          <path d="M18 66 L34 46 L50 66 Z" fill="currentColor"/>
+          <path d="M34 66 L50 36 L66 66 Z" fill="currentColor"/>
+          <path d="M50 66 L66 46 L82 66 Z" fill="currentColor"/>
+        </svg>
+      </div>
 
-  <hr>
-
-  <!-- 訓練詳細 -->
-  <section id="detailTraining">
-    <h2>訓練の目的と概要</h2>
-    <p>
-      本訓練は、山奥市における防災行政無線の作動確認および連携体制の強化を目的として実施します。
-      市民の皆様への正確な情報伝達を維持するため、訓練放送を行います。
-    </p>
-
-    <h3>放送内容（予定）</h3>
-    <div class="card" style="background:#f2f7ff;">
-      <p>
-        「これは山奥市からのお知らせです。現在、防災行政無線の試験放送を行っています。これは訓練です。」
-      </p>
+      <div>
+        <strong>山奥市（やまおくし）公式ホームページ</strong>
+        <span>防災・緊急情報</span>
+      </div>
     </div>
 
-    <h3>注意事項</h3>
+    <form class="search" action="search.html" method="get">
+      <input name="q" placeholder="サイト内検索" />
+      <button type="submit">検索</button>
+    </form>
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html">トップ</a>
+    <a href="life.html">くらし・手続き</a>
+    <a href="tourism.html">観光・文化</a>
+    <a href="admin.html">市政情報</a>
+  </div>
+</nav>
+
+<main class="container">
+
+  <!-- 🔴 最上部：緊急訓練 -->
+  <section class="card" style="border-left:6px solid var(--danger);">
+    <h1 style="margin-top:0;">【訓練】局所的破壊に伴う防災行政無線の試験放送を実施します</h1>
+    <p><strong>掲載日：</strong>2026年3月1日</p>
+
     <ul class="list">
-      <li>本訓練は災害ではありません。</li>
-      <li>屋外スピーカーから放送がありますが、サイレン音は含まれない場合があります。</li>
-      <li>天候等により内容や時間が変更となる場合があります。</li>
+      <li><strong>実施日：</strong>2026年3月15日（日）</li>
+      <li><strong>時間：</strong>12時00分頃</li>
+      <li><strong>対象：</strong>山奥市全域</li>
     </ul>
 
-    <h3>問い合わせ</h3>
     <p>
-      山奥市役所 防災課<br>
-      電話：111-222-4949／E-mail：bousai@yamaoku-city.jp
+      本訓練は、山奥市の防災行政無線設備および情報伝達体制の確認を目的として実施するものです。
+      実際の災害ではありませんので、ご理解とご協力をお願いいたします。
     </p>
   </section>
 
-  <hr>
+  <div style="height:20px;"></div>
 
   <!-- 防災概要 -->
-  <section>
-    <h2>山奥市の防災について</h2>
+  <section class="card">
+    <h2>山奥市の防災体制について</h2>
     <p>
-      山奥市では、市民の安全を守るため、各種防災情報や避難情報を発信しています。  
-      日ごろから防災への備えを行い、いざという時に備えましょう。
-    </p>
-  </section>
-
-  <!-- 災害への備え（一般情報） -->
-  <section>
-    <h2>災害への備え</h2>
-    <ul class="list">
-      <li>地震への備え</li>
-      <li>風水害への備え</li>
-      <li>土砂災害への備え</li>
-      <li>大雪・寒波への備え</li>
-      <li>家庭内の安全確保</li>
-    </ul>
-  </section>
-
-  <!-- 避難情報 -->
-  <section>
-    <h2>避難情報と避難所</h2>
-    <p>
-      指定避難所の一覧やハザードマップ等の情報は、以下のリンクからご確認ください。
-    </p>
-    <ul class="list">
-      <li><a href="#">避難所一覧</a></li>
-      <li><a href="#">ハザードマップ</a></li>
-      <li><a href="#">避難情報の発表基準</a></li>
-    </ul>
-  </section>
-
-  <!-- 情報伝達手段 -->
-  <section>
-    <h2>防災情報の伝達手段</h2>
-    <p>
-      山奥市では、以下の手段で防災情報・緊急情報を発信しています：
-    </p>
-    <ul class="list">
-      <li>防災行政無線</li>
-      <li>市公式ウェブサイト</li>
-      <li>SNS（Twitter/Facebook/X）</li>
-      <li>緊急速報メール</li>
-    </ul>
-  </section>
-
-  <!-- よくある質問 -->
-  <section>
-    <h2>よくある質問（FAQ）</h2>
-    <dl class="list">
-      <dt>Q：本訓練は災害ですか？</dt>
-      <dd>A：いいえ。これは防災訓練です。</dd>
-
-      <dt>Q：防災行政無線は必ず聞こえますか？</dt>
-      <dd>A：屋外スピーカーの範囲内で正常に放送されることを確認していますが、場所によって聞こえ方が異なる場合があります。</dd>
-    </dl>
-  </section>
-
-</article>
+      山奥市では、地震・風水害・土砂災害・大雪等の自然災害に備え、
